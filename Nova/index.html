@@ -48,7 +48,7 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <!-- <h1 class="d-flex align-items-center">Nova</h1> -->
-        <img src="full-logo.gif" alt="Evento" height="60px" width="180px"></a>
+        <img src="full-logo.gif" alt="IARI-23" height="60px" width="180px"></a>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,11 +57,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -79,7 +79,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -90,19 +90,51 @@
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
+        <center><h2 data-aos="fade-up"><span>IARI-23</span><br><br>International Conference on Interdisciplinary<br> Academic Research and Innovation <br><br></h2>
+        <br>
+        <div id="timer"></div><br>
+          <a href="#about" class="btn-get-started">Registration</a>
+        </center>
         <div class="col-xl-4">
-          <h2 data-aos="fade-up">International Conference on Interdisciplinary Academic Research and Innovation <br><br>(IARI-23)<br><br></h2>
+          <!-- <center><h2 data-aos="fade-up">(IARI-23)<br><br><span >International Conference on Interdisciplinary Academic Research and Innovation </span><br><br></h2></center> -->
           <!-- <blockquote data-aos="fade-up" data-aos-delay="100">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote> -->
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Registration</a>
+          <!-- <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Registration</a> -->
             <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
 
         </div>
       </div>
     </div>
+    <script>
+      function updateTimer() {
+    future = Date.parse("may 30, 2023 00:00:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>days</span></div>' +
+        '<div>' + h + '<span>hours</span></div>' +
+        '<div>' + m + '<span>minutes</span></div>' +
+        '<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+    </script>
+
+
   </section><!-- End Hero Section -->
 
   <main id="main">
@@ -115,14 +147,15 @@
           <h2>About The Conference</h2>
 
         </div>
-        <p>Department of Applied Sciences is organizing an International Conference on Interdisciplinary Academic Research and Innovation The IARI 2023 aims to bring together scientists, engineers, technologists and researchers working in academic institutes, research laboratories and industries on a common platform to interact with one another and to provide an opportunity to present their work as well as exchange information and understanding on recent advancement in the various field of science and technology. A special session will be organized in Hybrid mode for the alumni for sharing their experience and views with interested participants and current students of the department.  
+        <p class="tryi">Department of Applied Sciences is organizing an International Conference on Interdisciplinary Academic Research and Innovation The IARI 2023 aims to bring together scientists, engineers, technologists and researchers working in academic institutes, research laboratories and industries on a common platform to interact with one another and to provide an opportunity to present their work as well as exchange information and understanding on recent advancement in the various field of science and technology. A special session will be organized in Hybrid mode for the alumni for sharing their experience and views with interested participants and current students of the department.  
           The conference will include invited talks and contributed papers on emerging areas by eminent experts from various academic and research organizations as well as industries. In this context, we encourage submissions of high quality research papers as per details given in topics of interest. It is a tentative list, but the scope of the conference is not limited to these topics.
           </p>
-
+          
         
-              </div>
+            
               <div class="swiper-pagination"></div>
             </div>
+            
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
@@ -135,14 +168,14 @@
     <br><br><br>
     <div class="section-header">
       <h2>Call For Abstracts And Papers</h2></div>
-      <p style="padding-left: 105px; padding-right: 105px;">The <b>International Conference on “Interdisciplinary Academic Research and Innovation”</b> will be held at CGC Jhanjeri, Mohali on May20, 2023. The participants for oral /poster presentation are requested to submit the extended abstracts (Max.200 words) for the conference; it should be in MS word and PDF format, Times New Roman 12 points to be sent through email to <a href="mailto:iari2023.cgc@gmail.com"> iari2023.cgc@gmail.com</a> as an attachment. The name of presenting author should be underlined.</p>
+      <p class="try">The <b>International Conference on “Interdisciplinary Academic Research and Innovation”</b> will be held at CGC Jhanjeri, Mohali on May20, 2023. The participants for oral /poster presentation are requested to submit the extended abstracts (Max.200 words) for the conference; it should be in MS word and PDF format, Times New Roman 12 points to be sent through email to <a href="mailto:iari2023.cgc@gmail.com"> iari2023.cgc@gmail.com</a> as an attachment. The name of presenting author should be underlined.</p>
     <br><br>
 
     <br>
     <div class="section-header" style="background-color: #f2f2f2; padding: 30px;">
       <h2>Topics Of Interest</h2>
     </div>
-      <p style="padding-left: 105px; padding-right: 105px; background-color: #f2f2f2;"><b>Fundamental Sciences:</b> Numerical approximation and analysis, Numerical simulation, Numerical optimization, General statistical methods, Stochastic analysis methods, Analytical and numerical techniques, Finite element methods, Dynamical systems methods, Chemical composition analysis, Energy analysis, Heat transfer, Interdisciplinary applications of physics, Environmental aspects, Effects of pollution, Fuzzy logic, and others...<br><br>
+      <p class="try" style="background-color: #f2f2f2;"><b>Fundamental Sciences:</b> Numerical approximation and analysis, Numerical simulation, Numerical optimization, General statistical methods, Stochastic analysis methods, Analytical and numerical techniques, Finite element methods, Dynamical systems methods, Chemical composition analysis, Energy analysis, Heat transfer, Interdisciplinary applications of physics, Environmental aspects, Effects of pollution, Fuzzy logic, and others...<br><br>
         <b>Computers Engineering:</b> Computer modeling and simulation, Algorithms, Software engineering, Artificial intelligence, Neural networks, Image processing, Data acquisition: hardware and software, Data presentation and visualization, Data analysis: algorithms and implementation, Data management, Big Data, Internet and network applications, and others...<br><br>
         <b>Electrical Engineering:</b> Electrical and electronic instruments and components, Circuits and circuit components, Signal processing electronics, Power electronics, Electric motors, Electric vehicles, Biomass energy, Wind energy, Solar energy, Solar cells (photovoltaics), Conventional hydropower, Hydroturbines, and others...<br><br>
         <b>Mechanical Engineering:</b> General theory of classical mechanics, Computational methods in classical mechanics, Control of mechanical systems, Dynamics and kinematics of rigid bodies, Mechanical properties of solids, Applied mechanics and design, Deformation and plasticity, Mechanical modes of vibration, Mechatronics, Robotic systems engineering, Automotive engineering, Vehicle technology, Aerospace systems and technology, and others...<br><br>
@@ -198,7 +231,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <h3>IARI-23</h3>
-            <p>Aims to bring together scientists, engineers, technologists and researchers working in academic institutes, research laboratories and industries on a common platform to interact with one another and to provide an opportunity to present their work as well as exchange information and understanding on recent advancement in the various field of science and technology.</p>
+            <p>Organized By<br> Department Of Applied Sciences<br>Chandigarh Engineering College, CGC Jhanjheri<br>Mohali, India</p>
             <a class="cta-btn" href="#">Register</a>
           </div>
         </div>
@@ -223,10 +256,10 @@
             </a>
             <p>International Conference on Interdisciplinary Academic Research and Innovation</p>
             <div class="social-links d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/cgcjhanjeri" target="_main" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/ChandigarhGroupOfCollegesJhanjeri/" target="_main" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/Cgcjhanjeri/" target="_main" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/school/cgc-jhanjeri/" target="_main" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
@@ -255,11 +288,10 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Chandigarh Engineering College, CGC Jhanjheri <br>
+              Mohali, India<br><br>
+              <strong>Phone:</strong> <a href="tel:07018274612">+91 7018274612</a><br>
+              <strong>Email:</strong> <a href="mailto:nav.prashar@gmail.com">nav.prashar@gmail.com</a><br>
             </p>
 
           </div>

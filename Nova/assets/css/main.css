@@ -264,7 +264,7 @@ section {
 }
 
 .header.sticked {
-  background: #f2f2f2;
+  background: #ffff;
   padding: 12px 0;
 }
 
@@ -520,10 +520,43 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+#timer body {
+  text-align: center;
+  padding: 50px 350px;
+  background: #0D1A29;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#timer {
+  font-size: 3.1em;
+  font-weight: 100;
+  color: white;
+  text-shadow: 0 0 20px #48C8FF;
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 100px;
+}
+
+#timer div span {
+  color: #B1CDF1;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: .45em;
+  font-weight: 400;
+}
+
+
+
+
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/kissan-ai.appspot.com/o/rm373batch2-04.jpg?alt=media&token=4e17050d-b904-430f-8a46-aeab8a1b92d3") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -534,7 +567,7 @@ section {
   .hero:after {
     position: absolute;
     content: "";
-    width: 40%;
+    width: 0%;
     background: var(--color-secondary);
     top: 0;
     bottom: 0;
@@ -563,10 +596,19 @@ section {
     background-attachment: fixed;
   }
 }
+.hero h2 span{
+  margin: 0;
+  padding-top: 25px;
+  font-size: 53px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #43aef5;
+  font-family: var(--font-secondary)
+}
 
 .hero h2 {
   margin: 0;
-  padding-top: 85px;
+  padding-top: 25px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
@@ -790,7 +832,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/cgcb1.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -834,6 +876,28 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.tryi{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.try {
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
+@media (max-width: 575px){
+  .try{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .tryi{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .features {
   padding-bottom: 0;
 }
